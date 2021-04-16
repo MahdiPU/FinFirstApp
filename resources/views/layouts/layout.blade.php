@@ -107,22 +107,18 @@
         </div>
     </div>
 </nav>
-
+<section class="d-block">
 @if (isset($slot))
     <!-- Page Content -->
-    <main>
         {{ $slot }}
-    </main>
-@endif
+    @endif
 
-
-@stack('modals')
-
-@livewireScripts
-<script src="{{asset('js/alpinejs.js')}}"></script>
-
-@yield('content')
+    @yield('content')
+</section>
 @include('controller-messages')
-@yield('bottom_scripts')
+@stack('modals')
+@livewireScripts
+<script src="{{asset('js/alpinejs.js')}}"></script>@yield('bottom_scripts')
+
 </body>
 </html>
