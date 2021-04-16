@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="w-100"></div>
-                    <div class="w-100 text-center">
+                    <div class="w-100 text-center mt-2">
                         <button type="submit" class="btn btn-outline-info">Submit</button>
                     </div>
                 </div>

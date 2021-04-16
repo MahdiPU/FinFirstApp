@@ -15,10 +15,10 @@
                     <div class="col-12">
                         <div class="m-1">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required value="{{$bloodType->name}}">
+                            <input type="text" id="name" name="name" class="bg-dark text-white form-control" required value="{{$bloodType->name}}">
                         </div>
                     </div>
-                    <div class="w-100 text-center">
+                    <div class="w-100 text-center  mt-2">
                         <button type="submit" class="btn btn-outline-info">Submit</button>
                     </div>
                 </div>

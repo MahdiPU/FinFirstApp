@@ -14,18 +14,19 @@
                     <div class="col-12">
                         <div class="m-1">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
+                            <input type="text" id="name" name="name" class="bg-dark text-white form-control" required>
                         </div>
                     </div>
                     <div class="w-100"></div>
                     <div class="col-12">
                         <div class="m-1">
                             <input type="checkbox" id="is_visible" name="is_visible"
-                                   class="form-check-input" value="1">
+                                   class="form-check-input bg-dark text-white"
+                                   value="1" style="border-color: white">
                             <label for="is_visible" class="form-check-label">Is Visible</label>
                         </div>
                     </div>
-                    <div class="w-100 text-center">
+                    <div class="w-100 text-center mt-2">
                         <button type="submit" class="btn btn-outline-info">Submit</button>
                     </div>
                 </div>

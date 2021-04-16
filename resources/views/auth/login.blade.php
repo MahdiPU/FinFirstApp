@@ -11,20 +11,20 @@
                         <div class="row text-center justify-content-center">
                             <div class="col-11 col-md-5 mb-2">
                                 <label for="email"></label>
-                                <input class="form-control mx-2" type="email" name="email" id="email"
+                                <input class="form-control bg-dark text-white mx-2" type="email" name="email" id="email"
                                        placeholder="Email"
                                        required
                                        autofocus>
                             </div>
                             <div class="col-11 col-md-5 mb-2 ">
                                 <label for="password"></label>
-                                <input class="form-control mx-2" type="password" name="password" id="password" required
+                                <input class="form-control bg-dark text-white mx-2" type="password" name="password" id="password" required
                                        autocomplete="current-password"
                                        placeholder="Password">
                             </div>
 
                             <div class="col-12 mb-2 mx-2">
-                                <input class="form-check-input" type="checkbox" id="remember_me" name="remember">
+                                <input class="form-check-input bg-dark text-white "  style="border-color: white" type="checkbox" id="remember_me" name="remember">
                                 <label class="form-check-label" for="remember_me">
                                     {{ __('Remember me') }}
                                 </label>
