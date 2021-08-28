@@ -26,15 +26,19 @@
             @if (Auth::user() && Auth::user()->hasVerifiedEmail())
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="mx-1 btn @if(Route::getCurrentRoute()->getName()=='home') btn-primary @else btn-outline-primary @endif"
                            aria-current="page" href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="mx-1 btn @if(Route::getCurrentRoute()->getName()=='certificate.assignIndex') btn-primary @else btn-outline-primary @endif"
                            aria-current="page" href="{{route('certificate.assignIndex')}}">Manage My Certificates</a>
-                    </li>
+                    </li> -->
                     @if (\Illuminate\Support\Facades\Auth::user()->hasRole('Admin'))
+                        <li class="nav-item">
+                            <a class="mx-1 btn @if(Route::getCurrentRoute()->getName()=='serial') btn-primary @else btn-outline-primary @endif"
+                               href="{{route('serial')}}">Search Serial</a>
+                        </li>
                         <li class="nav-item">
                             <a class="mx-1 btn @if(Route::getCurrentRoute()->getName()=='certificate.index') btn-primary @else btn-outline-primary @endif"
                                href="{{route('certificate.index')}}">Certificates</a>
@@ -51,6 +55,7 @@
                             <a class="mx-1 btn @if(Route::getCurrentRoute()->getName()=='user.all') btn-primary @else btn-outline-primary @endif"
                                href="{{route('user.all')}}">All Users</a>
                         </li>
+                        <!-- 
                         {{--                    <li class="nav-item dropdown">--}}
                         {{--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"--}}
                         {{--                           data-bs-toggle="dropdown" aria-expanded="false">--}}
@@ -67,7 +72,7 @@
                         {{--                    </li>--}}
                         {{--                    <li class="nav-item">--}}
                         {{--                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>--}}
-                        {{--                    </li>--}}
+                        {{--                    </li>--}} -->
                     @endif
                 </ul>
                 <div class="d-flex">
